@@ -1,3 +1,4 @@
 .vscode/settings.json
 
-bin/*.class
+bin/ui/*.class
+bin/model/*.class
