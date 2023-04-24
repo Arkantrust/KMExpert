@@ -8,10 +8,12 @@
 
 GreenSQA is a colombian company focused on software quality assurance (Hence the acronym SQA). It develops projects for organizations which seek assurance for their projects in order to meet high quality standards. More information on their [website](https://greensqa.com/en/).
 
-KMExpert is an app developed for GreenSQA with the purpose of
+KMExpert is an app developed for GreenSQA with the help of students from [ICESI University](https://www.icesi.edu.co/en/)
 
 ## Objective
 
  “Keep employees's knowledge before they leave for other employers.”
 
-## [Instructions](https://docs.google.com/document/d/1KJTLdL9wca5BfgcHYpAuzBXKnEi6yTKckZ-kaz7Lq1o/edit)
+## Instructions
+
+Task instructions can be consulted [here](https://docs.google.com/document/d/1KJTLdL9wca5BfgcHYpAuzBXKnEi6yTKckZ-kaz7Lq1o/edit)
