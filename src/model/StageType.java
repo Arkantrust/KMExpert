@@ -5,8 +5,8 @@ public enum StageType {
     ANALYSIS,
     DESIGN,
     DEVELOPMENT,
-    CLOSINGANDMAINTENANCE,
-    PROJECTCONTROL;
+    CLOSING_AND_MAINTENANCE,
+    PROJECT_CONTROL;
 
 
     /**
@@ -24,9 +24,9 @@ public enum StageType {
                 break;
             case 4: type = DEVELOPMENT;
                 break;
-            case 5: type = CLOSINGANDMAINTENANCE;
+            case 5: type = CLOSING_AND_MAINTENANCE;
                 break;
-            case 6: type = PROJECTCONTROL;
+            case 6: type = PROJECT_CONTROL;
                 break;
         }
         return type;
