@@ -11,12 +11,13 @@ public class Stage {
     private Calendar endDate;
     private Calendar actualStartDate;
     private Calendar actualEndDate;
-
+    private KnowledgeUnit[] knowledgeUnits;
 
     //methods
     public Stage(int intType, boolean approvedState) {
         this.type = StageType.getType(intType);
         this.active = approvedState;
+        knowledgeUnits = new KnowledgeUnit[50];
     }
     
     public StageType getType() {
@@ -70,5 +71,13 @@ public class Stage {
     public String toString() {
         return "Stage: " + type + "\nApproved State: " + active + "\nStart Date: " + startDate + "\nEnd Date: "
                 + endDate + "\nActual Start Date: " + actualStartDate + "\nActual End Date: " + actualEndDate;
+    }
+
+    public KnowledgeUnit[] getKnowledgeUnits() {
+        return knowledgeUnits;
+    }
+
+    public void setKnowledgeUnits(KnowledgeUnit[] knowledgeUnits) {
+        this.knowledgeUnits = knowledgeUnits;
     }
 }

@@ -16,18 +16,18 @@ public enum StageType {
     public static StageType getType(int intType) {
         StageType type = null;
         switch(intType) {
-            case 0: type = START;
+            case 1: type = START;
                 break;
-            case 1: type = ANALYSIS;
+            case 2: type = ANALYSIS;
                 break;
-            case 2: type = DESIGN;
+            case 3: type = DESIGN;
                 break;
-                case 3: type = DEVELOPMENT;
+            case 4: type = DEVELOPMENT;
                 break;
-            case 4: type = CLOSINGANDMAINTENANCE;
+            case 5: type = CLOSINGANDMAINTENANCE;
                 break;
-            case 5: type = PROJECTCONTROL;
-            break;
+            case 6: type = PROJECTCONTROL;
+                break;
         }
         return type;
     }
