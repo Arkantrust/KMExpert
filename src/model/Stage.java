@@ -14,7 +14,7 @@ public class Stage {
     private KnowledgeUnit[] knowledgeUnits;
 
     //methods
-    public Stage(int intType, boolean approvedState) {
+    public Stage(int intType, boolean approvedState) { //TODO: Add date support
         this.type = StageType.getType(intType);
         this.active = approvedState;
         knowledgeUnits = new KnowledgeUnit[50];
@@ -43,7 +43,7 @@ public class Stage {
     public void setStartDate(Calendar startDate) {
         this.startDate = startDate;
     }
-
+    
     public Calendar getEndDate() {
         return endDate;
     }
@@ -59,7 +59,7 @@ public class Stage {
     public void setActualStartDate(Calendar actualStartDate) {
         this.actualStartDate = actualStartDate;
     }
-
+    
     public Calendar getActualEndDate() {
         return actualEndDate;
     }
@@ -67,17 +67,18 @@ public class Stage {
     public void setActualEndDate(Calendar actualEndDate) {
         this.actualEndDate = actualEndDate;
     }
-    
-    public String toString() {
-        return "Stage: " + type + "\nApproved State: " + active + "\nStart Date: " + startDate + "\nEnd Date: "
-                + endDate + "\nActual Start Date: " + actualStartDate + "\nActual End Date: " + actualEndDate;
-    }
 
     public KnowledgeUnit[] getKnowledgeUnits() {
         return knowledgeUnits;
     }
-
+    
     public void setKnowledgeUnits(KnowledgeUnit[] knowledgeUnits) {
         this.knowledgeUnits = knowledgeUnits;
+    }
+
+    @Override
+    public String toString() {
+        return "Stage: " + type + "\nApproved State: " + active + "\nStart Date: " + startDate + "\nEnd Date: "
+                + endDate + "\nActual Start Date: " + actualStartDate + "\nActual End Date: " + actualEndDate;
     }
 }

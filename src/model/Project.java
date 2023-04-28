@@ -10,7 +10,8 @@ public class Project {
     private double budget;
     private String managerName;
     private String managerPhone;
-    
+    private int[] stagesLengths;
+
     //relations
     private Stage[] stages;
 
@@ -21,7 +22,8 @@ public class Project {
 
     //methods
     public Project(String name, String clientName, Calendar endDate, double budget,
-            String managerName, String managerPhone, Calendar stageEndDate) {
+            String managerName, String managerPhone, Calendar stageEndDate, int[] stagesLengths) {
+
         this.name = name;
         this.clientName = clientName;
         this.startDate = today;
@@ -29,13 +31,14 @@ public class Project {
         this.budget = budget;
         this.managerName = managerName;
         this.managerPhone = managerPhone;
+        this.stagesLengths = stagesLengths;
 
         // Stage
         this.stages = new Stage[NUMSTAGES];
         stages[0] = new Stage(1, true);
         stages[0].setStartDate(today);
         stages[0].setEndDate(stageEndDate);
-        for (int i = 1; i < NUMSTAGES; i++) {
+        for (int i = 2; i == NUMSTAGES; i++) {
             stages[i] = new Stage(i, false);
         }
     }
@@ -89,6 +92,14 @@ public class Project {
 
     public void setStages(Stage[] stages) {
         this.stages = stages;
+    }
+
+    public int[] getStagesLengths() {
+        return stagesLengths;
+    }
+
+    public void setStagesLengths(int[] stagesLengths) {
+        this.stagesLengths = stagesLengths;
     }
 
     public String toString() {
